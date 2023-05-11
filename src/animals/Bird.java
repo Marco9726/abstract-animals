@@ -1,32 +1,26 @@
 package animals;
 
 import abs.Animal;
+import inter.Fly;
 
-public class Bird extends Animal{
+public class Bird extends Animal implements Fly{
 
-	public Bird(String cry, String food) {
+	@Override
+	public void makeFly() {
 		
-		super(cry, food);
-	
+		System.out.println();
 	}
 
 	@Override
-	protected void showCry() {
+	public void getCry() {
 		
-		System.out.println(getCry());
+		System.out.println("Chip");
 	}
 
 	@Override
-	protected void showFood() {
+	public void getFood() {
 		
-		System.out.println(getFood());
-	}
-	
-	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
-	}
+		System.out.println("BirdFood");
+	}	
 		
 }

@@ -1,32 +1,29 @@
 package animals;
 
 import abs.Animal;
+import inter.Swim;
 
-public class Dolphin extends Animal{
-
-	public Dolphin(String cry, String food) {
-		
-		super(cry, food);
-	
-	}
+public class Dolphin extends Animal implements Swim{
 
 	@Override
-	protected void showCry() {
-		
-		System.out.println(getCry());
-	}
-
-	@Override
-	protected void showFood() {
-		
-		System.out.println(getFood());
-	}
-	
-	
-	@Override
-	public String toString() {
+	public void makeSwim() {
 		// TODO Auto-generated method stub
-		return super.toString();
+		
 	}
+
+	@Override
+	public void getCry() {
+		
+		System.out.println("DolphinCry");
+	}
+
+	@Override
+	public void getFood() {
+		
+		System.out.println("Fish");
+	}
+
+	
+
 		
 }

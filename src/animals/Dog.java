@@ -2,31 +2,18 @@ package animals;
 
 import abs.Animal;
 
-public class Dog extends Animal{
-
-	public Dog(String cry, String food) {
-		
-		super(cry, food);
-	
-	}
+public class Dog extends Animal {
 
 	@Override
-	protected void showCry() {
+	public void getCry() {
 		
-		System.out.println(getCry());
+		System.out.println("Bau");
 	}
 
 	@Override
-	protected void showFood() {
+	public void getFood() {
 		
-		System.out.println(getFood());
+		System.out.println("Meat");
 	}
 	
-	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
-	}
-		
 }

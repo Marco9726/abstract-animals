@@ -2,45 +2,20 @@ package abs;
 
 public abstract class Animal {
 	
-	private String cry;
-	private String food;
-	
-	public Animal( String cry, String food) {
-		
-		setCry(cry);
-		setFood(food);
-	}
-		
-	public String getCry() {
-		return cry;
-	}
-
-	public void setCry(String cry) {
-		this.cry = cry;
-	}
-
-	public String getFood() {
-		return food;
-	}
-
-	public void setFood(String food) {
-		this.food = food;
-	}
-	
 	public static void sleep() {
 		
 		System.out.println("Zzz");
 	}
 	
-	protected abstract void showCry();
+	public abstract void getCry();
 	
-	protected abstract void showFood();
-
+	public abstract void getFood();
 	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return getCry() + "\n" + getFood();
+		return super.toString();
 	}
+	
 	
 }

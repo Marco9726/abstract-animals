@@ -10,16 +10,16 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		Dog d1 = new Dog("bau", "meat");	
-		Bird b1 = new Bird("chip", "insects");
-		Eagle e1 = new Eagle("cryEagle", "meat");
-		Dolphin do1 = new Dolphin("cryDolphin", "fish");
+		Dog d1 = new Dog();	
+		Bird b1 = new Bird();
+		Eagle e1 = new Eagle();
+		Dolphin do1 = new Dolphin();
 		
 		Animal[] animals = { d1, b1, e1, do1 };
 		
 		for ( int i = 0; i < animals.length; i++) {
 			
-			System.out.println(animals[i]);
+			animals[i].getCry();
 			System.out.println("-----------");
 		}
 		
